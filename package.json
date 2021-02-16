@@ -1,0 +1,25 @@
+{
+  "name": "sharedb-json-counter",
+  "version": "1.0.0",
+  "description": "A simple client/server app using ShareDB and WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "build": "mkdir -p static/dist/ && ./node_modules/.bin/browserify client.js -o static/dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@teamwork/websocket-json-stream": "^2.0.0",
+    "diff-match-patch": "^1.0.5",
+    "express": "^4.14.0",
+    "json0-ot-diff": "^1.0.5",
+    "lodash": "^4.17.20",
+    "reconnecting-websocket": "^4.2.0",
+    "sharedb": "^1.0.0-beta",
+    "ws": "^7.2.0"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  }
+}
